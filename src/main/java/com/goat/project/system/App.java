@@ -1,0 +1,38 @@
+package com.goat.project.system;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import javafx.scene.image.Image;
+import javafx.stage.StageStyle;
+
+public class App extends Application {
+    
+    public static void main(String[] args) {
+        launch(args);
+    }
+    
+    @Override
+    public void start(Stage stage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/loginPane.fxml"));
+        //FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/signInPane.fxml"));
+        
+        Parent root = loader.load();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        
+        Image iconImage = new Image(getClass().getResourceAsStream("images/diosarapIcon.png"));
+        stage.getIcons().add(iconImage);
+        stage.setTitle("Sales and Records Management System");
+        
+        stage.setResizable(false);
+        stage.setMaximized(true);
+        
+        stage.initStyle(StageStyle.UNDECORATED);
+ 
+        stage.show();
+    }
+}
