@@ -3,7 +3,7 @@ package com.goat.project.system;
 
   import java.util.Scanner;
 public class Simulation {
-    
+    public static void main(String[] args) {
   
         Scanner input = new Scanner(System.in);
 
@@ -60,7 +60,7 @@ public class Simulation {
 
         System.out.println("Too many failed attempts. Program closed.");
         input.close();
-    
+    }
 }
         
         
