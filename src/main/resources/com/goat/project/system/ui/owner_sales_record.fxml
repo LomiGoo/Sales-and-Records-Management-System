@@ -14,15 +14,15 @@
    <children>
       <BorderPane layoutX="824.0" layoutY="428.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
-            <VBox alignment="TOP_CENTER" prefHeight="972.0" prefWidth="261.0" spacing="20.0" style="-fx-background-color: BLUE;" BorderPane.alignment="CENTER">
+            <VBox fx:id="LEFTBOARD" alignment="TOP_CENTER" prefHeight="972.0" prefWidth="261.0" spacing="20.0" style="-fx-background-color: BLUE;" BorderPane.alignment="CENTER">
                <padding>
                   <Insets top="15.0" />
                </padding>
                <children>
-                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
+                  <HBox fx:id="DASHBOARD" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="36.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                        <Label text="DASHBOARD">
+                        <Label fx:id="DASHBOARDTEXT" text="DASHBOARD">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -32,10 +32,10 @@
                         <Insets left="10.0" />
                      </padding>
                   </HBox>
-                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
+                  <HBox fx:id="SALESRECORD" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="36.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                        <Label text="SALES RECORD">
+                        <Label fx:id="SALESRECORDTEXT" text="SALES RECORD">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -45,10 +45,10 @@
                         <Insets left="10.0" />
                      </padding>
                   </HBox>
-                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
+                  <HBox fx:id="MANAGEUSERS" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="36.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                        <Label text="MANAGE USERS">
+                        <Label fx:id="MANAGEUSERSTEXT" text="MANAGE USERS">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -58,10 +58,10 @@
                         <Insets left="10.0" />
                      </padding>
                   </HBox>
-                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
+                  <HBox fx:id="SESSIONLOG" alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="36.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                        <Label text="SESSION LOG">
+                        <Label fx:id="SESSIONLOGTEXT" text="SESSION LOG">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -91,10 +91,10 @@
             </VBox>
          </left>
          <top>
-            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: GREEN;" BorderPane.alignment="CENTER">
+            <HBox fx:id="UPPERBOARD" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: GREEN;" BorderPane.alignment="CENTER">
                <children>
                   <Circle fill="DODGERBLUE" radius="44.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="DIOSARAP'S MANAGEMENT">
+                  <Label fx:id="TITLETEXT" text="DIOSARAP'S MANAGEMENT">
                      <font>
                         <Font size="20.0" />
                      </font>
@@ -118,7 +118,34 @@
             </HBox>
          </top>
          <center>
-            <AnchorPane BorderPane.alignment="CENTER" />
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" layoutX="668.0" layoutY="134.0" prefHeight="39.0" prefWidth="124.0" text="SALES">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="1036.0" layoutY="134.0" prefHeight="39.0" prefWidth="124.0" text="TIME">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="1482.0" layoutY="134.0" prefHeight="39.0" text="DATE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="99.0" layoutY="134.0" prefHeight="39.0" prefWidth="124.0" text="RECPRD ID">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="395.0" layoutY="134.0" prefHeight="39.0" prefWidth="124.0" text="ITEM">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
          </center>
       </BorderPane>
    </children>
