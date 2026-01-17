@@ -18,7 +18,6 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/loginPane.fxml"));
-        //FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/signInPane.fxml"));
         
         Parent root = loader.load();
         Scene scene = new Scene(root);
@@ -29,7 +28,6 @@ public class App extends Application {
         stage.setTitle("Sales and Records Management System");
         
         stage.setResizable(false);
-        stage.setMaximized(true);
         
         stage.initStyle(StageStyle.UNDECORATED);
  
