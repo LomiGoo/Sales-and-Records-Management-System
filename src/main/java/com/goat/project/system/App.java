@@ -21,7 +21,7 @@ public class App extends Application {
         //FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/signInPane.fxml"));
         //FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/owner_dashboard.fxml"));
         
-        //kay HANS tong fxml line (COMMENT MO NALANG TONG LINE 25 BIBIT)
+        //kay HANS tong fxml line (COMMENT MO NALANG TONG LINE 25 CJHAY)
         FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/owner_sales_record.fxml"));
         
         //kay BIBIT tong fxml line(COMMENT MO NALANG TONG LINE 28 HANS)
