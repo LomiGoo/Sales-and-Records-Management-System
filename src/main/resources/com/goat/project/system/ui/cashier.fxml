@@ -42,7 +42,7 @@
                   <HBox alignment="CENTER_LEFT" layoutX="426.0" layoutY="33.0" prefHeight="100.0" prefWidth="200.0" spacing="5.0" style="-fx-background-color: orange;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
                      <children>
                         <Circle fill="DODGERBLUE" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
-                        <Label prefHeight="30.0" prefWidth="461.0" text="Cashier : Chevelle S. Nacionales">
+                        <Label fx:id="cashierUser" prefHeight="30.0" prefWidth="461.0" text="Cashier : Chevelle S. Nacionales">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -50,7 +50,7 @@
                               <Insets right="950.0" />
                            </HBox.margin>
                         </Label>
-                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="251.0" text="January 17, 2026">
+                        <Label fx:id="cashierDateDisplay" alignment="CENTER" prefHeight="30.0" prefWidth="251.0" text="January 17, 2026">
                            <font>
                               <Font size="20.0" />
                            </font>
@@ -60,12 +60,12 @@
                               <Insets bottom="30.0" top="30.0" />
                            </HBox.margin>
                         </Separator>
-                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="177.0" text="8:04:30 PM">
+                        <Label fx:id="cashierTimeDisplay" alignment="CENTER" prefHeight="30.0" prefWidth="177.0" text="8:04:30 PM">
                            <font>
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="169.0" text="LOG OUT" />
+                        <Button fx:id="logoutButton" mnemonicParsing="false" prefHeight="42.0" prefWidth="169.0" text="LOG OUT" />
                      </children>
                      <padding>
                         <Insets left="10.0" right="10.0" />
@@ -95,7 +95,7 @@
                                                 <Insets bottom="50.0" left="10.0" right="10.0" top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label prefHeight="51.0" prefWidth="263.0" style="-fx-background-color: red;" text="Category 1">
+                                          <Label fx:id="dummyCateg" prefHeight="51.0" prefWidth="263.0" style="-fx-background-color: red;" text="Category 1">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -125,7 +125,7 @@
                                        <children>
                                           <VBox prefHeight="194.0" prefWidth="156.0" style="-fx-background-color: pink;">
                                              <children>
-                                                <Label alignment="TOP_LEFT" prefHeight="156.0" prefWidth="156.0" text="Food Food food food food" wrapText="true" VBox.vgrow="ALWAYS">
+                                                <Label fx:id="dummyItem" alignment="TOP_LEFT" prefHeight="156.0" prefWidth="156.0" text="Food Food food food food" wrapText="true" VBox.vgrow="ALWAYS">
                                                    <font>
                                                       <Font size="17.0" />
                                                    </font>
@@ -163,7 +163,7 @@
                                  <content>
                                     <VBox prefHeight="122.0" prefWidth="572.0" spacing="10.0">
                                        <children>
-                                          <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="150.0" prefHeight="213.0" prefWidth="552.0">
+                                          <HBox fx:id="dummyTransact" alignment="CENTER_LEFT" fillHeight="false" minHeight="150.0" prefHeight="213.0" prefWidth="552.0">
                                              <children>
                                                 <Label prefHeight="225.0" prefWidth="70.0" text="x1" wrapText="true">
                                                    <font>
