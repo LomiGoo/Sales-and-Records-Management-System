@@ -24,9 +24,9 @@ public class App extends Application {
         //kay HANS tong fxml line (COMMENT MO NALANG TONG LINE 25 CJHAY)
         
         //FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/owner_dashboard.fxml"));
-        //FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/owner_sales_record.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/owner_sales_record.fxml"));
                
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/cashier.fxml"));
+        //FXMLLoader loader = new FXMLLoader(getClass().getResource("ui/cashier.fxml"));
         
         Parent root = loader.load();
         Scene scene = new Scene(root);
