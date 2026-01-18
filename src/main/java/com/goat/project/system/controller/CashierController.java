@@ -19,7 +19,7 @@ public class CashierController {
     // Item Window
     // =======================
     @FXML
-    private Label itemName, itemPrice;
+    private Label itemName, itemPricee;
     @FXML
     private VBox itemContainer;
     
