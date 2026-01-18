@@ -85,7 +85,7 @@
                            <children>
                               <ScrollPane fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <content>
-                                    <VBox prefHeight="145.0" prefWidth="263.0" spacing="10.0">
+                                    <VBox fx:id="categoryContainer" maxHeight="160.0" minHeight="50.0" prefHeight="160.0" prefWidth="263.0" spacing="10.0">
                                        <children>
                                           <Label alignment="CENTER" prefHeight="30.0" prefWidth="320.0" text="CATEGORY">
                                              <font>
@@ -95,7 +95,7 @@
                                                 <Insets bottom="50.0" left="10.0" right="10.0" top="10.0" />
                                              </VBox.margin>
                                           </Label>
-                                          <Label fx:id="dummyCateg" prefHeight="51.0" prefWidth="263.0" style="-fx-background-color: red;" text="Category 1">
+                                          <Label fx:id="categoryList" minHeight="50.0" prefHeight="160.0" prefWidth="263.0" style="-fx-background-color: red;" text="Category 1">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
@@ -123,9 +123,9 @@
                                           <Insets bottom="15.0" left="10.0" right="10.0" top="15.0" />
                                        </padding>
                                        <children>
-                                          <VBox prefHeight="194.0" prefWidth="156.0" style="-fx-background-color: pink;">
+                                          <VBox fx:id="itemContainer" prefHeight="194.0" prefWidth="156.0" style="-fx-background-color: pink;">
                                              <children>
-                                                <Label fx:id="dummyItem" alignment="TOP_LEFT" prefHeight="156.0" prefWidth="156.0" text="Food Food food food food" wrapText="true" VBox.vgrow="ALWAYS">
+                                                <Label fx:id="itemName" alignment="TOP_LEFT" prefHeight="156.0" prefWidth="156.0" text="Food Food food food food" wrapText="true" VBox.vgrow="ALWAYS">
                                                    <font>
                                                       <Font size="17.0" />
                                                    </font>
@@ -133,7 +133,7 @@
                                                       <Insets left="5.0" />
                                                    </padding>
                                                 </Label>
-                                                <Label prefHeight="21.0" prefWidth="273.0" text="₱30.00">
+                                                <Label fx:id="itemPrice" prefHeight="21.0" prefWidth="273.0" text="₱30.00">
                                                    <VBox.margin>
                                                       <Insets top="15.0" />
                                                    </VBox.margin>
