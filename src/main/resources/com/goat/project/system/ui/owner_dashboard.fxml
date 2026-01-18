@@ -5,8 +5,10 @@
 <?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -15,6 +17,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Rectangle?>
@@ -401,7 +404,7 @@
                      </children>
                   </HBox>
                   <Separator layoutX="23.0" layoutY="391.0" prefHeight="24.0" prefWidth="1595.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-                  <BarChart layoutX="19.0" layoutY="480.0" prefHeight="400.0" prefWidth="296.0">
+                  <BarChart layoutX="-12.0" layoutY="480.0" prefHeight="400.0" prefWidth="296.0">
                     <xAxis>
                       <CategoryAxis side="BOTTOM" />
                     </xAxis>
@@ -614,6 +617,400 @@
                         </PieChart>
                      </children>
                   </VBox>
+                  <StackPane layoutX="622.0" layoutY="305.0" prefHeight="220.0" prefWidth="416.0" style="-fx-background-color: pink;" visible="false" AnchorPane.bottomAnchor="447.0" AnchorPane.leftAnchor="622.0" AnchorPane.rightAnchor="621.0" AnchorPane.topAnchor="305.0">
+                     <children>
+                        <AnchorPane prefHeight="437.0" prefWidth="416.0" visible="false">
+                           <children>
+                              <Label alignment="CENTER" layoutX="111.0" layoutY="14.0" prefHeight="56.0" prefWidth="416.0" style="-fx-background-color: green;" text="ADD NEW CATEGORY" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="107.0" text="Category Name :" AnchorPane.leftAnchor="10.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="170.0" layoutY="108.0" prefHeight="32.0" prefWidth="236.0" AnchorPane.rightAnchor="10.0" />
+                              <Button layoutX="101.0" layoutY="172.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="ADD" />
+                              <Button layoutX="223.0" layoutY="172.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="107.0" text="CANCEL" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: violet;" visible="false">
+                           <children>
+                              <Label alignment="CENTER" layoutX="194.0" layoutY="14.0" prefHeight="43.0" prefWidth="416.0" style="-fx-background-color: red;" text="ADD NEW ITEM" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="60.0" text="Item Name :">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="108.0" layoutY="58.0" prefHeight="25.0" prefWidth="308.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="10.0" />
+                              <Label layoutX="14.0" layoutY="89.0" text="Price           :">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="99.0" layoutY="87.0" prefHeight="25.0" prefWidth="94.0" AnchorPane.leftAnchor="98.0" />
+                              <Label layoutX="14.0" layoutY="121.0" text="Category    :">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox layoutX="102.0" layoutY="119.0" prefWidth="150.0" AnchorPane.leftAnchor="98.0" />
+                              <Button layoutX="90.0" layoutY="164.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="111.0" text="ADD" />
+                              <Button layoutX="220.0" layoutY="164.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="111.0" text="CANCEL" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="308.0" layoutY="194.0" prefHeight="572.0" prefWidth="768.0" style="-fx-background-color: orange;" visible="false" AnchorPane.bottomAnchor="206.0" AnchorPane.leftAnchor="310.0" AnchorPane.rightAnchor="580.0" AnchorPane.topAnchor="194.0">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="366.0" layoutY="14.0" prefHeight="41.0" prefWidth="739.0" style="-fx-background-color: violet;" text="MANAGE USERS" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="280.0" layoutY="148.0" prefHeight="357.0" prefWidth="739.0" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="148.0">
+                                 <content>
+                                    <VBox prefHeight="74.0" prefWidth="747.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" minHeight="45.0" prefHeight="45.0" prefWidth="759.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="30.0" prefWidth="270.0" text="Chiv">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Separator orientation="VERTICAL" prefHeight="25.0" prefWidth="0.0">
+                                                   <HBox.margin>
+                                                      <Insets bottom="10.0" top="10.0" />
+                                                   </HBox.margin>
+                                                </Separator>
+                                                <Label alignment="CENTER" prefHeight="30.0" prefWidth="164.0" text="Admin">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Separator orientation="VERTICAL" prefHeight="25.0" prefWidth="0.0">
+                                                   <HBox.margin>
+                                                      <Insets bottom="10.0" top="10.0" />
+                                                   </HBox.margin>
+                                                </Separator>
+                                                <Label alignment="CENTER" prefHeight="30.0" prefWidth="154.0" text="Active">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Separator orientation="VERTICAL" prefHeight="25.0" prefWidth="0.0">
+                                                   <HBox.margin>
+                                                      <Insets bottom="10.0" top="10.0" />
+                                                   </HBox.margin>
+                                                </Separator>
+                                                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="EDIT">
+                                                   <HBox.margin>
+                                                      <Insets right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button mnemonicParsing="false" text="DELETE" />
+                                             </children>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" minHeight="45.0" prefHeight="45.0" prefWidth="759.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="30.0" prefWidth="270.0" text="Chib">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Separator orientation="VERTICAL" prefHeight="25.0" prefWidth="0.0">
+                                                   <HBox.margin>
+                                                      <Insets bottom="10.0" top="10.0" />
+                                                   </HBox.margin>
+                                                </Separator>
+                                                <Label alignment="CENTER" prefHeight="30.0" prefWidth="164.0" text="Cashier">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Separator orientation="VERTICAL" prefHeight="25.0" prefWidth="0.0">
+                                                   <HBox.margin>
+                                                      <Insets bottom="10.0" top="10.0" />
+                                                   </HBox.margin>
+                                                </Separator>
+                                                <Label alignment="CENTER" prefHeight="30.0" prefWidth="154.0" text="Inactive">
+                                                   <font>
+                                                      <Font size="20.0" />
+                                                   </font>
+                                                </Label>
+                                                <Separator orientation="VERTICAL" prefHeight="25.0" prefWidth="0.0">
+                                                   <HBox.margin>
+                                                      <Insets bottom="10.0" top="10.0" />
+                                                   </HBox.margin>
+                                                </Separator>
+                                                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="EDIT">
+                                                   <HBox.margin>
+                                                      <Insets right="10.0" />
+                                                   </HBox.margin>
+                                                </Button>
+                                                <Button mnemonicParsing="false" text="DELETE" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                              <HBox alignment="CENTER_LEFT" layoutX="280.0" layoutY="64.0" prefHeight="33.0" prefWidth="739.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                 <children>
+                                    <Label text="Search :">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField prefHeight="25.0" prefWidth="198.0" promptText="Search User...">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="111.0" text="ADD NEW USER">
+                                       <HBox.margin>
+                                          <Insets left="340.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="280.0" layoutY="104.0" prefHeight="45.0" prefWidth="759.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="30.0" prefWidth="221.0" text="Username">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator orientation="VERTICAL" prefHeight="25.0" prefWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" left="50.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Separator>
+                                    <Label alignment="CENTER" prefHeight="30.0" prefWidth="164.0" text="Role">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator orientation="VERTICAL" prefHeight="25.0" prefWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Separator>
+                                    <Label alignment="CENTER" prefHeight="30.0" prefWidth="154.0" text="Status">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator orientation="VERTICAL" prefHeight="25.0" prefWidth="0.0">
+                                       <HBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Separator>
+                                    <Label alignment="CENTER" prefHeight="30.0" prefWidth="127.0" text="Actions">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Separator layoutX="76.0" layoutY="103.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                              <Button layoutX="27.0" layoutY="524.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="95.0" text="CLOSE" AnchorPane.leftAnchor="10.0" />
+                              <AnchorPane layoutX="-31.0" layoutY="-45.0" prefHeight="200.0" prefWidth="200.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="544.0" prefWidth="749.0" style="-fx-background-color: blue;" visible="false">
+                           <StackPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </StackPane.margin>
+                           <children>
+                              <Label alignment="CENTER" layoutX="361.0" layoutY="12.0" prefHeight="42.0" prefWidth="749.0" style="-fx-background-color: orange;" text="ADD USER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="82.0" prefHeight="30.0" prefWidth="197.0" text="Username                  :">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="125.0" prefHeight="30.0" prefWidth="197.0" text="Password                   :">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="171.0" prefHeight="30.0" prefWidth="197.0" text="Confirm Password     :">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="248.0" layoutY="85.0" prefHeight="25.0" prefWidth="295.0" />
+                              <TextField layoutX="248.0" layoutY="128.0" prefHeight="25.0" prefWidth="295.0" />
+                              <TextField layoutX="248.0" layoutY="174.0" prefHeight="25.0" prefWidth="295.0" />
+                              <Label layoutX="35.0" layoutY="214.0" prefHeight="30.0" prefWidth="197.0" text="Role                           :">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox layoutX="248.0" layoutY="217.0" prefWidth="150.0" />
+                              <Button layoutX="512.0" layoutY="484.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="80.0" text="SAVE" />
+                              <Button layoutX="614.0" layoutY="484.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="80.0" text="CANCEL" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
+                  <StackPane layoutX="479.0" layoutY="219.0" prefHeight="535.0" prefWidth="432.0" style="-fx-background-color: violet;" visible="false">
+                     <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="154.0" layoutY="21.0" style="-fx-background-color: red;" text="SESSION LOG" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ScrollPane fitToWidth="true" hbarPolicy="NEVER" layoutX="94.0" layoutY="63.0" prefHeight="429.0" prefWidth="432.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                                 <content>
+                                    <VBox prefHeight="75.0" prefWidth="315.0" spacing="10.0">
+                                       <children>
+                                          <VBox prefHeight="134.0" prefWidth="315.0" style="-fx-background-color: pink;">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="333.0" spacing="5.0">
+                                                   <children>
+                                                      <Label text="User : Chevelle">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Separator orientation="VERTICAL" prefHeight="200.0">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </Separator>
+                                                      <Label text="Role : Cashier">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="333.0" spacing="12.0">
+                                                   <children>
+                                                      <Label text="IN : 12:00PM">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Separator orientation="VERTICAL" prefHeight="200.0">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </Separator>
+                                                      <Label text="OUT : 1:00PM">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Separator orientation="VERTICAL" prefHeight="200.0">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </Separator>
+                                                      <Label text="Date : January 18, 2026">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </VBox>
+                                          <VBox prefHeight="134.0" prefWidth="315.0" style="-fx-background-color: pink;">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="333.0" spacing="5.0">
+                                                   <children>
+                                                      <Label text="User : Chevelle">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Separator orientation="VERTICAL" prefHeight="200.0">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </Separator>
+                                                      <Label text="Role : Cashier">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="333.0" spacing="12.0">
+                                                   <children>
+                                                      <Label text="IN : 12:00PM">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Separator orientation="VERTICAL" prefHeight="200.0">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </Separator>
+                                                      <Label text="OUT : 1:00PM">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Separator orientation="VERTICAL" prefHeight="200.0">
+                                                         <HBox.margin>
+                                                            <Insets bottom="10.0" top="10.0" />
+                                                         </HBox.margin>
+                                                      </Separator>
+                                                      <Label text="Date : January 18, 2026">
+                                                         <font>
+                                                            <Font size="15.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets left="10.0" right="10.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                              <Button layoutX="9.0" layoutY="489.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="70.0" text="CLOSE" AnchorPane.leftAnchor="10.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </StackPane>
                </children>
             </AnchorPane>
          </center>

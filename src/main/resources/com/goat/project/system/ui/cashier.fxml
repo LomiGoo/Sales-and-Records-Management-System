@@ -3,8 +3,10 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -15,7 +17,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.goat.project.system.controller.CashierController">
    <children>
@@ -153,47 +154,42 @@
                         </AnchorPane>
                         <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
                            <children>
-                              <Label layoutX="14.0" layoutY="14.0" text="Transact Action">
+                              <Label layoutX="14.0" layoutY="14.0" text="Transaction">
                                  <font>
                                     <Font size="20.0" />
                                  </font>
                               </Label>
-                              <ScrollPane fitToWidth="true" layoutX="-8.0" layoutY="185.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="101.0">
+                              <ScrollPane fitToWidth="true" layoutX="-8.0" layoutY="185.0" prefHeight="641.0" prefWidth="574.0" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="101.0">
                                  <content>
-                                    <VBox prefHeight="122.0" prefWidth="572.0">
+                                    <VBox prefHeight="122.0" prefWidth="572.0" spacing="10.0">
                                        <children>
-                                          <HBox alignment="CENTER" prefHeight="44.0" prefWidth="572.0" spacing="120.0">
+                                          <HBox alignment="CENTER_LEFT" fillHeight="false" minHeight="150.0" prefHeight="213.0" prefWidth="552.0">
                                              <children>
-                                                <Label text="QTY">
+                                                <Label prefHeight="225.0" prefWidth="70.0" text="x1" wrapText="true">
                                                    <font>
                                                       <Font size="20.0" />
                                                    </font>
+                                                   <HBox.margin>
+                                                      <Insets right="96.0" />
+                                                   </HBox.margin>
                                                 </Label>
-                                                <Label text="FID">
+                                                <Label prefHeight="153.0" prefWidth="102.0" text="001" wrapText="true">
                                                    <font>
                                                       <Font size="20.0" />
                                                    </font>
+                                                   <HBox.margin>
+                                                      <Insets right="45.0" />
+                                                   </HBox.margin>
                                                 </Label>
-                                                <Label text="ITEM">
+                                                <Label prefHeight="163.0" prefWidth="110.0" text="Hungarian Silog" wrapText="true">
                                                    <font>
                                                       <Font size="20.0" />
                                                    </font>
+                                                   <HBox.margin>
+                                                      <Insets right="65.0" />
+                                                   </HBox.margin>
                                                 </Label>
-                                                <Label text="PRICE">
-                                                   <font>
-                                                      <Font size="20.0" />
-                                                   </font>
-                                                </Label>
-                                             </children>
-                                          </HBox>
-                                          <HBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="552.0" spacing="97.0">
-                                             <children>
-                                                <Label prefHeight="30.0" prefWidth="73.0" text="x1">
-                                                   <font>
-                                                      <Font size="20.0" />
-                                                   </font>
-                                                </Label>
-                                                <Label prefHeight="30.0" prefWidth="106.0" text="001">
+                                                <Label prefHeight="188.0" prefWidth="96.0" text="₱30.00" wrapText="true">
                                                    <font>
                                                       <Font size="20.0" />
                                                    </font>
@@ -207,6 +203,53 @@
                                     </VBox>
                                  </content>
                               </ScrollPane>
+                              <HBox alignment="CENTER" layoutX="29.0" layoutY="67.0" prefHeight="44.0" prefWidth="572.0" spacing="120.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <children>
+                                    <Label text="QTY">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="FID">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="ITEM">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="PRICE">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets right="20.0" />
+                                 </padding>
+                              </HBox>
+                              <Button layoutX="236.0" layoutY="779.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="143.0" text="Clear Transaction" />
+                              <Button layoutX="404.0" layoutY="779.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="143.0" text="Complete Transaction" />
+                              <RadioButton layoutX="14.0" layoutY="780.0" mnemonicParsing="false" text="Deduct Item Mode">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="Modes" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton layoutX="14.0" layoutY="810.0" mnemonicParsing="false" text="Remove Item Mode" toggleGroup="$Modes">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </RadioButton>
+                              <RadioButton layoutX="14.0" layoutY="750.0" mnemonicParsing="false" selected="true" text="No Action" toggleGroup="$Modes">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </RadioButton>
                            </children>
                         </AnchorPane>
                      </children>
