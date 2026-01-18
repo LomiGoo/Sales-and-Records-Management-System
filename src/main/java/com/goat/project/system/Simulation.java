@@ -12,7 +12,7 @@ public class Simulation {
         String adminPass = "admin123";
 
         String[] cashierUsers = {"cashier1", "cashier2"};
-        String[] cashierPass = {"cashier123", "cashier456"};
+        String[] cashierPass = {"cashier12", "cashier45"};
 
         int attempts = 0;
 
