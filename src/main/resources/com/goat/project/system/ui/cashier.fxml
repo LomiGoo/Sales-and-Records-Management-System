@@ -133,7 +133,7 @@
                                                       <Insets left="5.0" />
                                                    </padding>
                                                 </Label>
-                                                <Label text="PHP 30.00">
+                                                <Label prefHeight="21.0" prefWidth="273.0" text="₱30.00">
                                                    <VBox.margin>
                                                       <Insets top="15.0" />
                                                    </VBox.margin>
@@ -173,7 +173,7 @@
                                                       <Insets right="96.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <Label prefHeight="153.0" prefWidth="102.0" text="001" wrapText="true">
+                                                <Label prefHeight="153.0" prefWidth="102.0" text="ITEM-001" wrapText="true">
                                                    <font>
                                                       <Font size="20.0" />
                                                    </font>
@@ -230,9 +230,9 @@
                                     <Insets right="20.0" />
                                  </padding>
                               </HBox>
-                              <Button layoutX="236.0" layoutY="779.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="143.0" text="Clear Transaction" />
-                              <Button layoutX="404.0" layoutY="779.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="143.0" text="Complete Transaction" />
-                              <RadioButton layoutX="14.0" layoutY="780.0" mnemonicParsing="false" text="Deduct Item Mode">
+                              <Button layoutX="233.0" layoutY="752.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="143.0" text="Clear Transaction" />
+                              <Button layoutX="233.0" layoutY="802.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="143.0" text="Complete Transaction" />
+                              <RadioButton layoutX="14.0" layoutY="785.0" mnemonicParsing="false" text="Deduct Item Mode">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
@@ -240,16 +240,21 @@
                                     <ToggleGroup fx:id="Modes" />
                                  </toggleGroup>
                               </RadioButton>
-                              <RadioButton layoutX="14.0" layoutY="810.0" mnemonicParsing="false" text="Remove Item Mode" toggleGroup="$Modes">
+                              <RadioButton layoutX="14.0" layoutY="815.0" mnemonicParsing="false" text="Remove Item Mode" toggleGroup="$Modes">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
                               </RadioButton>
-                              <RadioButton layoutX="14.0" layoutY="750.0" mnemonicParsing="false" selected="true" text="No Action" toggleGroup="$Modes">
+                              <RadioButton layoutX="14.0" layoutY="755.0" mnemonicParsing="false" selected="true" text="No Action" toggleGroup="$Modes">
                                  <font>
                                     <Font size="15.0" />
                                  </font>
                               </RadioButton>
+                              <Label layoutX="406.0" layoutY="781.0" text="TOTAL : ₱30.00">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
                            </children>
                         </AnchorPane>
                      </children>

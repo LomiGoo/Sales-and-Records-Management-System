@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -13,12 +14,114 @@
 <AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane layoutX="824.0" layoutY="428.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox fx:id="UPPERBOARD" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: GREEN;" BorderPane.alignment="CENTER">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="44.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label fx:id="TITLETEXT" text="DIOSARAP'S MANAGEMENT">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label text="SALES RECORD">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="1340.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" stroke="BLACK" strokeType="INSIDE" width="57.0" />
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </top>
+         <center>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" layoutX="34.0" layoutY="27.0" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: orange;" text="RECORD ID">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="391.0" layoutY="27.0" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: orange;" text="ITEM">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="734.0" layoutY="27.0" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: orange;" text="SALES">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="1104.0" layoutY="27.0" prefHeight="39.0" prefWidth="124.0" style="-fx-background-color: orange;" text="TIME">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="1438.0" layoutY="27.0" prefHeight="39.0" prefWidth="196.0" style="-fx-background-color: orange;" text="DATE (MM/DD/YYYY)">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane fitToWidth="true" layoutX="14.0" layoutY="80.0" prefHeight="892.0" prefWidth="1609.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="80.0">
+                     <content>
+                        <VBox minHeight="69.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="69.0" prefWidth="1607.0" spacing="295.0">
+                                 <children>
+                                    <Label text="LOG-001">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Food">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="₱30.00">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="1:27:35PM">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="01-18-2026">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children></AnchorPane>
+         </center>
          <left>
             <VBox alignment="TOP_CENTER" prefHeight="972.0" prefWidth="261.0" spacing="20.0" style="-fx-background-color: BLUE;" BorderPane.alignment="CENTER">
                <padding>
                   <Insets top="15.0" />
                </padding>
                <children>
+                  <Label alignment="CENTER" prefHeight="48.0" prefWidth="296.0" style="-fx-background-color: pink;" text="HISTORY REPORT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
                   <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="36.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
@@ -44,7 +147,55 @@
                      <padding>
                         <Insets left="10.0" />
                      </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
                   </HBox>
+                  <Label alignment="CENTER" prefHeight="48.0" prefWidth="296.0" style="-fx-background-color: pink;" text="CASHIER MANAGEMENT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="36.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                        <Label text="ADD CATEGORY">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="36.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+                        <Label text="ADD ITEM">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Label alignment="CENTER" prefHeight="48.0" prefWidth="296.0" style="-fx-background-color: pink;" text="SESSION MANAGEMENT">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Label>
                   <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
                      <children>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="36.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
@@ -71,55 +222,9 @@
                         <Insets left="10.0" />
                      </padding>
                   </HBox>
-                  <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="292.0" spacing="10.0">
-                     <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="36.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-                        <Label text="LOG OUT">
-                           <font>
-                              <Font size="20.0" />
-                           </font>
-                        </Label>
-                     </children>
-                     <padding>
-                        <Insets left="10.0" />
-                     </padding>
-                     <VBox.margin>
-                        <Insets top="560.0" />
-                     </VBox.margin>
-                  </HBox>
                </children>
             </VBox>
          </left>
-         <top>
-            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: GREEN;" BorderPane.alignment="CENTER">
-               <children>
-                  <Circle fill="DODGERBLUE" radius="44.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="DIOSARAP'S MANAGEMENT">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-                  <Label text="SALES RECORD">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                     <HBox.margin>
-                        <Insets left="1340.0" />
-                     </HBox.margin>
-                  </Label>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="52.0" stroke="BLACK" strokeType="INSIDE" width="57.0" />
-               </children>
-               <BorderPane.margin>
-                  <Insets />
-               </BorderPane.margin>
-               <padding>
-                  <Insets bottom="10.0" left="10.0" top="10.0" />
-               </padding>
-            </HBox>
-         </top>
-         <center>
-            <AnchorPane BorderPane.alignment="CENTER" />
-         </center>
       </BorderPane>
    </children>
 </AnchorPane>
