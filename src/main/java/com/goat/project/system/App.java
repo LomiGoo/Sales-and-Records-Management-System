@@ -36,6 +36,7 @@ public class App extends Application {
         stage.setTitle("Sales and Records Management System");
         
         stage.setResizable(false);
+        stage.setMaximized(true);
         
         stage.initStyle(StageStyle.UNDECORATED);
  
