@@ -189,7 +189,7 @@
                                                       <Insets right="65.0" />
                                                    </HBox.margin>
                                                 </Label>
-                                                <Label prefHeight="188.0" prefWidth="96.0" text="₱30.00" wrapText="true">
+                                                <Label prefHeight="188.0" prefWidth="96.0" text="₱300.00" wrapText="true">
                                                    <font>
                                                       <Font size="20.0" />
                                                    </font>

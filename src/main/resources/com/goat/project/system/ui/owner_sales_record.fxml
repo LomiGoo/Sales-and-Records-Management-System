@@ -73,7 +73,7 @@
                      <content>
                         <VBox minHeight="69.0">
                            <children>
-                              <HBox alignment="CENTER" prefHeight="69.0" prefWidth="1607.0" spacing="295.0">
+                              <HBox alignment="CENTER" prefHeight="69.0" prefWidth="1607.0" spacing="294.0">
                                  <children>
                                     <Label text="LOG-001">
                                        <font>
